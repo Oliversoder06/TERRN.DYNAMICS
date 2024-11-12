@@ -9,9 +9,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        footer_dark: '#161616',
+        footer_main: '#242323'
       },
+      fontFamily: {
+        sans: ['Helvetica', 'Arial', 'Tahoma', 'sans-serif'],
+      },
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+      }
     },
   },
   plugins: [],
