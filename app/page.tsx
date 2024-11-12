@@ -2,7 +2,8 @@ import React from 'react'
 
 const Homepage = () => {
   return (
-    <main>
+    <main className='h-screen'>
+
     </main>
   )
 }
