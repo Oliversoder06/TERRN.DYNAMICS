@@ -41,7 +41,7 @@ const Navbar = () => {
             {/* MOBILE */}
             <div className='md:hidden'>
                 <nav>
-                    <div className='flex justify-between items-center'>
+                    <div className='flex justify-between items-center absolute z-10'>
                         <div>
                             <Image src='/logos/black-icon.png'
                                 alt='logo'
@@ -49,7 +49,7 @@ const Navbar = () => {
                                 height={100}
                                 onClick={handleMenu}
                                 className={`w-[75px] fixed top-3 left-3 transition-all duration-500 ${isMenuOpen ? 'rotate-[360deg] opacity-0' : 'block'}`} />
-                            <div className={`${isMenuOpen ? 'bg-black opacity-100' : 'opacity-0'} transition-all duration-500  w-[200px] h-screen`}>
+                            <div className={`${isMenuOpen ? 'bg-black opacity-100' : 'opacity-0'} transition-all duration-500  w-[250px] h-screen`}>
                                 <Image src='/logos/white-icon.png'
                                     alt='logo'
                                     width={100}

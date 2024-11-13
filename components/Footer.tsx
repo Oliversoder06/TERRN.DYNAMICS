@@ -33,8 +33,16 @@ const Footer = () => {
                     </div>
                     <SocialMediaBallContainer />
                 </div>
-                <div className='bg-footer_dark h-[180px] flex items-center flex-col justify-center gap-8'>
-                    <Image src='/logos/white-logo.png' alt='logo' width={100} height={100} className='w-[300px] mx-auto' />
+                <div className='bg-footer_dark h-[180px] flex items-center flex-col justify-center gap-5'>
+                    <Image
+                        src='/logos/white-logo.png'
+                        alt='logo'
+                        width={100}
+                        height={100}
+                        className='w-[300px] mx-auto'
+                        unoptimized={true}
+                    />
+                    <div className='h-[1px] w-[75px] bg-white' />
                     <p className='text-white'>Copyright ©2024, <span className='font-semibold'>TERRN</span>.DYNAMICS</p>
                 </div>
             </footer>
