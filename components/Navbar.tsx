@@ -15,7 +15,9 @@ const Navbar = () => {
             <div className='hidden md:block bg-black h-[100px]'>
                 <nav className='max-w-[1440px] h-full mx-auto px-7'>
                     <div className='flex h-full items-center'>
-                        <Image src='/logos/white-icon.png' alt='logo' width={100} height={100} className='absolute lg:w-[100px] w-[75px]' />
+                        <Link href="/" className='absolute'>
+                            <Image src='/logos/white-icon.png' alt='logo' width={100} height={100} className=' lg:w-[100px] w-[75px]' />
+                        </Link>
                         <div className='flex justify-center w-full gap-16 items-center'>
                             <Link
                                 href="/about"
@@ -41,7 +43,7 @@ const Navbar = () => {
             {/* MOBILE */}
             <div className='md:hidden'>
                 <nav>
-                    <div className='flex justify-between items-center absolute z-10'>
+                    <div className='flex justify-between items-center fixed z-10'>
                         <div>
                             <Image src='/logos/black-icon.png'
                                 alt='logo'
